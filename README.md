@@ -2,7 +2,7 @@
 
 
 ## First of all, why use GMP?
-Each of the fundamental data types in C++ (and C) has a specific bit size that depends on the machine the language runs on. The number of bits allocated dictate the typical range (or in the case of a floating-point type the precision) of that data type. If a data type exceeds the maximum (or minimum) value it can hold then it overflows, resulting in wrong or undefined behavior. For example, in the standard library the largest integer possible is long long int which typically has a size of 64 bits. This means that the it can represent 2^64 different values, and in the case of an unsigned long long int (which doesn't support negative values) the maximum possible value is 2^64-1. 2^64-1 is a truly large number (about 18 quintillion or 18 billion billion) and in the vast majority of cases it suffices, but there are a few cases where it doesn't. Doing computations with values higher than that is impossible using only the standard library.
+Each of the fundamental data types in C++ (and C) has a specific bit size that depends on the machine the language runs on. The number of bits allocated dictate the typical range (or in the case of a floating-point type the precision) of that data type. If a data type exceeds the maximum (or minimum) value it can hold then it overflows, resulting in wrong or undefined behavior. For example, in the standard library the largest integer possible is long long int which typically has a size of 64 bits. This means that the it can represent 2<sup>64</sup> different values, and in the case of an unsigned long long int (which doesn't support negative values) the maximum possible value is 2<sup>64-1</sup>. 2<sup>64-1</sup> is a truly large number (about 18 quintillion or 18 billion billion) and in the vast majority of cases it suffices, but there are a few cases where it doesn't. Doing computations with values higher than that is impossible using only the standard library.
 
 Due to this specific "omission" of the C++ and C standard libraries, a number of different libraries that support bigger numbers have been created. I tried a few of them, but I usually found that they didn't have everything I wanted. I wanted a library that included at least the following features: overloaded operators, no limit on the maximum possible value, the possibility of intermixing with standard library integers, and important functions such as exponentiation or square root. This is where GMP comes in.
 
@@ -72,7 +72,7 @@ int main()
 ```
 Now we need to compile our code. I am using g++ but the process will be similar for the compiler of your choice. The only additional thing we have to do is link the GMP libgmp and libgmpxx libraries using the -l flag.
 ```
-g++ program.cpp -lgmp -lgmpxx
+g++ test1.cpp -lgmp -lgmpxx
 ```
 Then run the executable and the output will look something like this:
 ```
