@@ -273,7 +273,7 @@ Array after sorting:
 99999999999999999999999999999999999999999999999999
 
 ```
-Finally, notice that a string of 50 zeros is automatically converted to 0.
+I would like to note here that in the insertion_sort function I used auto to declare the temp variable. However, due to possible crashes when combining auto with the mpz_class in certain occasions, it is recommended to avoid auto anywhere a GMP C++ expression may appear. Finally, notice that a string of 50 zeros is automatically converted to 0.
 
 I have added all of the above programs to the Example folder in the repository.
 
@@ -287,4 +287,4 @@ Manual of the C++ interface, main section: https://gmplib.org/manual/C_002b_002b
 
 Manual of the C++ interface, integers section: https://gmplib.org/manual/C_002b_002b-Interface-Integers.html#C_002b_002b-Interface-Integers
 
-And as a bonus, using GMP you can calculate millions of digits of π yourselves! Here's the link for the program: https://gmplib.org/pi-with-gmp.html
+And as a bonus, using GMP you can calculate millions of digits of π yourselves! You can find the program here: https://gmplib.org/pi-with-gmp.html
