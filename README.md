@@ -286,5 +286,3 @@ GMP documentation in PDF format: https://gmplib.org/gmp-man-6.2.0.pdf
 Manual of the C++ interface, main section: https://gmplib.org/manual/C_002b_002b-Interface-General.html
 
 Manual of the C++ interface, integers section: https://gmplib.org/manual/C_002b_002b-Interface-Integers.html#C_002b_002b-Interface-Integers
-
-And as a bonus, using GMP you can calculate millions of digits of π yourselves! You can find the program here: https://gmplib.org/pi-with-gmp.html
