@@ -274,3 +274,17 @@ Array after sorting:
 
 ```
 Finally, notice that a string of 50 zeros is automatically converted to 0.
+
+I have added all of the above programs to the Example folder in the repository.
+
+## Useful links
+
+GMP main page: https://gmplib.org/
+
+GMP documentation in PDF format: https://gmplib.org/gmp-man-6.2.0.pdf
+
+Manual of the C++ interface, main section: https://gmplib.org/manual/C_002b_002b-Interface-General.html
+
+Manual of the C++ interface, integers section: https://gmplib.org/manual/C_002b_002b-Interface-Integers.html#C_002b_002b-Interface-Integers
+
+And as a bonus, using GMP you can calculate millions of digits of π yourselves! Here's the link for the program: https://gmplib.org/pi-with-gmp.html
